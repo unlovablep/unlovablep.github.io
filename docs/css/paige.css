@@ -1,0 +1,49 @@
+hr {
+	border-color: #7f7f7f;
+}
+a {
+	color: #ff7fc0;
+	text-decoration: none;
+}
+body {
+	background: #181818;
+	color: #ffcbfa;
+}
+#content{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 12px;
+	width: 75%;
+	max-width: 540px;
+	min-width: 440px;
+	height: 90%;
+	max-height: 720px;
+	min-height: 240px;
+	overflow-y: scroll;
+	border: 2px solid #ff7fc0;
+	text-align: center;
+	background: #404040;
+}
+#top {
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 75%;
+	line-height: 0.5;
+	align-content: center;
+}
+#links {
+	width: 220px;
+	margin: auto;
+	padding: 12px;
+	text-align: right;
+}
+.sitepng {
+	float: left;
+	width: 24px;
+	height: 24px;
+}
