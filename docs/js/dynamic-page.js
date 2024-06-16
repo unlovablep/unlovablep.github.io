@@ -16,7 +16,7 @@ async function fetchPage(pg) {
 
 async function main() {
 	const url = new URL(window.location.href)
-	const page = "/pages/" + url.searchParams.get("p") + ".html"
+	const page = "/pages/" + url.searchParams.get("p") + ".txt"
 
 	console.log(`PAGE\t: ${page}`)
 

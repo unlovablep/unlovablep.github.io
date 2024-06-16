@@ -14,7 +14,7 @@ async function fetchPage(pg) {
 }
 
 async function main() {
-	let annCont = await fetchPage("/pages/ann.html")
+	let annCont = await fetchPage("/pages/ann.txt")
 	const parser = new DOMParser()
 	const doc = parser.parseFromString(annCont, "text/html")
 	const divs = doc.querySelectorAll("div[id]")
