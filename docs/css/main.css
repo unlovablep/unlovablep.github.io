@@ -1,3 +1,10 @@
+a {
+	color: #ff7fc0;
+	text-decoration: none;
+}
+br {
+	line-height: 2;
+}
 body {
 	background: #181818;
 	color: #ffcbfa;

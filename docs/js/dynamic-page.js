@@ -22,10 +22,25 @@ async function main() {
 	let pageContents = await fetchPage(page)
 	if (!pageContents) {
 		console.error("Couldn't fetch page contents")
-		pageContents = "This page couldn't be loaded."
+		pageContents = "<p>This page couldn't be loaded, or does not exist.</p>" +
+			"<p>If you require assistance, please ask through one of my <a href=\"/paige.html\">contacts</a>.</p>"
 	}
 
-	//end
+	// end
 	document.getElementById("page").innerHTML = pageContents
+
+	// handle script tags
+	const pageElement = document.getElementById("page")
+	const scripts = pageElement.querySelectorAll("script")
+	scripts.forEach(script => {
+		const newScript = document.createElement("script")
+		if (script.src) {
+			newScript.src = script.src
+			newScript.async = false
+		} else {
+			newScript.textContent = script.textContent
+		}
+		document.body.appendChild(newScript)
+	})
 }
 main()
