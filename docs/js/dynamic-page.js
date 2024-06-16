@@ -1,4 +1,5 @@
 // dynamic-page.js
+// 
 
 if (!window.location.search) { window.location.href = "/landing.html?p=main" }
 
